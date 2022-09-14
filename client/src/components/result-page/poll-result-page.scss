@@ -1,0 +1,21 @@
+@import '../../style/shared.scss';
+
+.result-page-container{
+    display: flex; flex-wrap: wrap; justify-content: space-evenly;
+    width: 90%; margin: 25px auto; max-width: 1500px;
+    color: $main-text-color;
+
+    div{
+        width: 40%;
+        margin-bottom: 20px; padding: 15px;
+        background-color: $main-red;
+        border-radius: 7px;
+
+        @media(max-width:800px){ width: 80%;}
+
+        h3{
+            margin: 0 0 10px 0;
+        }
+        p{margin: 0;}
+    }
+}

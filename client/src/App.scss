@@ -1,0 +1,12 @@
+@import './style/shared.scss';
+
+body{
+    margin: 0;
+    background-color: $main-background;
+    font-family: $main-font;
+    overflow-x: hidden;
+}
+
+::-webkit-scrollbar { width: 15px;}
+::-webkit-scrollbar-track { background: rgb(139, 12, 12);}
+::-webkit-scrollbar-thumb { background: rgb(95, 12, 12); border-radius: 20px;}

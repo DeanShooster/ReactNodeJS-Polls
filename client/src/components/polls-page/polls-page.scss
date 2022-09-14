@@ -1,0 +1,81 @@
+@import '../../style/shared.scss';
+
+.polls-page-title{
+    text-align: center; text-decoration: underline;
+    color: $main-text-color;
+    font-size: 3rem;
+    margin: 10px 0 10px 0;
+}
+
+.polls-page-container{
+    width: 50%; margin: auto;
+
+    @media(max-width: 900px){ width: 100%;}
+
+    .poll{
+        width: 450px; margin: 0 auto 25px auto;
+        color: $main-text-color;
+
+        @media(max-width: 900px){ width: 400px;}
+        @media(max-width: 550px){ width: 100%; margin-left: 25px;}
+
+        p{
+            margin: 0; padding: 10px 0 10px 0; font-size: 1.3rem;
+            @media(max-width:500px){ width: 75%;}
+        }
+
+        form{
+            display: flex; flex-flow: column;
+
+            div{
+                display: flex; align-items: center;
+                margin: 0 0 10px 5px;
+                font-size: 1.1rem;
+
+                input{
+                    width: 15px; height: 15px;
+                    filter: hue-rotate(140deg);
+                }
+
+                label{
+                    margin-left: 15px;
+                    line-break: auto;
+                    @media(max-width:500px){ width: 75%;}
+                }
+            }
+
+            button{
+                width: 175px; padding: 10px 0 10px 0; margin-top: 20px;
+                font-size: 1.15rem; 
+                background-color: $main-red; color: $main-text-color;
+                border: none; border-radius: 5px;
+
+                &:hover{ cursor: pointer; background-color: $main-text-color; color: $main-red; outline: 1px solid $main-red;}
+            }
+        }
+    }
+}
+
+
+.polls-button-container{
+    width: 40%; margin: 50px auto; 
+    display: flex; justify-content: space-evenly;
+
+    @media(max-width: 900px){ width: 100%;}
+
+    button{
+        width: 30%; padding: 10px 0 10px 0; max-width: 175px;
+        font-size: 1.15rem; color: $main-text-color;
+        border: none; border-radius: 5px;
+    }
+
+    .prev-next-button{
+        background-color: $main-red;
+        &:hover{ cursor: pointer; background-color: $main-text-color; color: $main-red; outline: 1px solid $main-red;}
+    }
+
+    .disabled-button{
+        background-color: rgb(137, 38, 38);
+        filter: blur(1px);
+    }
+}
